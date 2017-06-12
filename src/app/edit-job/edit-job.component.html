@@ -14,4 +14,5 @@
   </div>
   <button class="btn btn-info" (click)="editJobShow=false">update</button>
   <button class="btn btn-danger" (click)="deleteJob(jobObject)">delete</button>
+  <a role="button" (click)="favJob(jobObject)"><img [class]="favBgColor(jobObject)"  src="../assets/images/fav.png" width="100px"></a>
 </div>

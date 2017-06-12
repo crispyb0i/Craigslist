@@ -1,4 +1,5 @@
 export class Job {
+  public favorite: boolean = false;
   constructor (
     public title: string,
     public description: string,
