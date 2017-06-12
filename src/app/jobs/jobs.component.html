@@ -1,3 +1,7 @@
+
+
 <ul>
-  <li *ngFor="let job of jobList" (click)="goToJobDetailPage(job)">{{job.title}}<br>{{job.description}}</li>
+  <li *ngFor="let job of jobList" (click)="goToJobDetailPage(job)">{{job.title}}</li>
 </ul>
+
+<app-new-job></app-new-job>

@@ -1,0 +1,17 @@
+<button class="btn btn-success" (click)="editJobShow = !editJobShow">edit</button>
+<div *ngIf="editJobShow">
+  <div class="form-group">
+    <label for="">Job Title: </label>
+    <input [(ngModel)]="jobObject.title" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="">Description: </label>
+    <input [(ngModel)]="jobObject.description" class="form-control">
+  </div>
+  <div class="form-group">
+    <label for="">Compensation: </label>
+    <input [(ngModel)]="jobObject.compensation" class="form-control">
+  </div>
+  <button class="btn btn-info" (click)="editJobShow=false">update</button>
+  <button class="btn btn-danger" (click)="deleteJob(jobObject)">delete</button>
+</div>

@@ -1,0 +1,19 @@
+
+<h4>Post New Job: </h4>
+<div class="form-group">
+  <label for="">Job Title: </label>
+  <input #newJobTitle class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Description: </label>
+  <input #newDescription class="form-control">
+</div>
+<div class="form-group">
+  <label for="">Compensation: </label>
+  <input #newCompensation class="form-control">
+</div>
+<div class="form-group">
+  <label for="">ID: </label>
+  <input #newID class="form-control">
+</div>
+<button class="btn btn-primary" (click)="submitNewJob(newJobTitle.value, newDescription.value, newCompensation.value, newID.value); newJobTitle.value=''; newDescription.value = ''; newID.value=''; newCompensation.value=''">Add</button>

@@ -1,3 +1,6 @@
-<p>
-  job-detail works!
-</p>
+<h1>{{jobObject.title}}</h1>
+
+<h4>description: {{jobObject.description}}</h4><br>
+<h4>compensation: {{jobObject.compensation}}</h4>
+
+<app-edit-job [jobObject]="jobObject"></app-edit-job>
